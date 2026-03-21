@@ -5,9 +5,6 @@ class Empleado {
         this.salary = Number(salary);
         this.active = true;
     }
-    active() {
-        return this.active
-    }
     present() {
         return `Hello my name is ${this.name} and I work as ${this.position}.`;
     }
@@ -16,6 +13,7 @@ class Empleado {
     }
     desactive() {
         this.active = false
+        return `${this.name} is desactivate`
     }
     info() {
         const statee = this.active ? "Active" : "desactive"
@@ -30,7 +28,7 @@ console.log(empleado1.info())
 
 class Lider extends Empleado {
     constructor(name, salary, team) {
-        super(name, salary);
+        super(name, "Team leader", salary);
         this.team = team;
     }
     presentTeam() {
