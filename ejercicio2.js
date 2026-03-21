@@ -91,14 +91,13 @@ for (let i = 0; i < catalogo.length; i++) {
     console.log(catalogo[i].ficha());
 }
 
-// 4 — Retirar dos contenidos
+
 console.log("\n--- Retiros ---");
 console.log(pelicula2.retirar());
 console.log(serie3.retirar());
 console.log(pelicula2.estado());
 console.log(serie3.estado());
 
-// 5 — Contar disponibles
 let contador = 0;
 for (let i = 0; i < catalogo.length; i++) {
     if (catalogo[i].disponible) {
